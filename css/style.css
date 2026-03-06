@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(241, 248, 244);
+}
+.cormorant-garamond {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.inter{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    width: 100%;
+    height: 4.75rem;
+    background-color: rgb(247, 252, 249);
+    position: static;
+    top: 0;
+    left: 0;
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    height: 4.75rem;
+}
+.logo{
+    gap: 0.75rem;
+    text-align: center;
+    display: flex;
+}
+.logo   i{
+    color: rgb(46 125 50);
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.logo-name{
+    color: rgb(46 125 50);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font:bold  Cormorant Garamond, serif;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width:50%
+}
+nav a{
+    color: rgb(85 139 47);
+    letter-spacing: .025em;
+    text-transform: uppercase;
+}
+.icons{
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(102 187 106);
+}
+.icons i{
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+}
+.icons span{
+    font:normal 20px Garamond, serif ;
+}
+/* ///////////////////////////////////////////////////////////////////////////////// */
+.catalog-text{
+    text-align: center;
+    margin: 7rem  auto;
+    font-family: Garamond;
+}
+.catalog-text   h2,.SHOPPING-head{
+    color: RGB(46, 125, 50);
+    letter-spacing: .025em;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin: 1.5rem  auto;
+    text-transform: uppercase;
+}
+.catalog-text   p{
+    color: rgb(107 143 94 );
+    font-size: 1rem;
+    line-height: 1.25rem;
+    letter-spacing: .03rem;
+    margin: auto;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+.products-container{
+    width: 90%;
+    margin:5rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap:4rem  2rem ;
+}
+.product-details{
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(129, 199, 132, 0.25);
+    box-shadow: rgba(129, 199, 132, 0.15) 0px 8px 32px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.product-details:hover{
+    transform:translateY(-10px);
+    transition:all 0.4s linear;
+    box-shadow: 2px 2px 2px 2px rgb(107, 143 ,94,0.5 ) ;
+}
+.product-details  img{
+    width: 270px;
+    height: 256px;
+    border-radius: .75rem;
+    margin-bottom: 1.25rem;
+    margin: auto;
+}
+.product-text   h3{
+    color: rgb(46 125 50);
+    letter-spacing: .025em;
+    font-family: Cormorant Garamond, serif;
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    margin-top: 1rem;
+}
+.product-text  p{
+    color: #558b2fb3;    
+    line-height: 1.625;
+    margin-bottom: 20px ;
+    margin-top: 20px;
+}
+.product-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.product-details span{
+    color: rgb(46 125 50);
+    letter-spacing: .025em;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: left;
+}
+.product-details    button{
+    color: rgb(46 125 50);
+    background-color: #81c7844d;
+    border:1px  solid #81c7844d;
+    border-radius: 100px;
+    font-size: .9rem;
+    padding: .625rem  1.5rem;
+    text-transform: uppercase;
+}
+.product-details    button:hover,.product-details    button:focus{
+    background-color:rgb(46 125 50);
+    color: rgb(205, 232, 207);
+}
